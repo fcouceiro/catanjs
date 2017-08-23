@@ -1,3 +1,6 @@
+#OSX
+.DS_Store
+
 # Logs
 logs
 *.log
@@ -31,6 +34,7 @@ bower_components
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
+bin/
 
 # Dependency directories
 node_modules/
