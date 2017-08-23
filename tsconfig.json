@@ -9,10 +9,10 @@
         "outDir": "bin/"
     },
     "exclude" : [
-        "build/"
+        "lib/**/*",
+        "bin/**/*"
     ],
     "include" : [
-        "lib/*.js",
         "src/**/*"
     ]
 }
