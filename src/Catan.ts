@@ -4,9 +4,11 @@ import { Settlement, SettlementType } from "./pieces/Settlement"
 import { ResourceCard, ResourceType } from "./cards/ResourceCards"
 import { Player } from "./Player"
 import { uuidsAreEqual } from "./UUID"
+import { GamePlay } from "./GamePlay"
 
 export class Catan {
 
+	private readonly gamePlay = GamePlay.Instance()
 	public terrains: Array<Terrain>
 	private settlements: Array<Settlement>
 	private robber: Robber
@@ -23,6 +25,10 @@ export class Catan {
 	]
 
 	constructor() {
+		// Setup gameplay
+		this.gamePlay.init()
+		this.gamePlay.setPlayersIDs(Player.getIDsFromPlayers(this.players))
+
 		// Line by line
 		this.terrains = new Array<Terrain>(
 			new Terrain(10, ResourceType.Ore),

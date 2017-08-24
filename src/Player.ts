@@ -25,4 +25,14 @@ export class Player{
 
 		return points
 	}
+
+	static getIDsFromPlayers(players : Array<Player>) : Array<string>{
+		let ids = new Array<string>()
+
+		for(let player of players){
+			ids.push(player._id)
+		}
+
+		return ids
+	}
 }
