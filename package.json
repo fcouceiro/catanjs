@@ -7,7 +7,7 @@
     "catanjs": "Catan.js"
   },
   "scripts": {
-    "test": "sh test.sh"
+    "test": "sh tests/test.sh"
   },
   "repository": {
     "type": "git",
