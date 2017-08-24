@@ -1,0 +1,32 @@
+{
+  "name": "catanjs",
+  "version": "1.0.0",
+  "description": "TypeScript implementation of the strategy board game Catan.",
+  "main": "index.ts",
+  "bin": {
+    "catanjs": "Catan.js"
+  },
+  "scripts": {
+    "test": "sh test.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fcouceiro/catanjs.git"
+  },
+  "keywords": [
+    "catan",
+    "typescript"
+  ],
+  "author": "Francisco Couceiro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fcouceiro/catanjs/issues"
+  },
+  "homepage": "https://github.com/fcouceiro/catanjs#readme",
+  "devDependencies": {
+    "@types/chai": "^4.0.4",
+    "@types/mocha": "^2.2.42",
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0"
+  }
+}
