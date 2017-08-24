@@ -4,7 +4,7 @@ import { expect } from "chai"
 import { Catan } from "../src/Catan"
 import { LargestArmyCard, LongestRoadCard, VictoryPointCard } from "../src/cards/SpecialCards"
 
-describe('Points [ City + Largest + Longest + Victory Point]', () => {
+describe('Player with: [ City + Largest + Longest + Victory Point]', () => {
 	it('should have 7 points', () => {
 		const catan = new Catan()
 		

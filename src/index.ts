@@ -38,6 +38,7 @@ function rollDices() {
 
 	document.getElementById('dice1').innerHTML = `${dice1} + ${dice2} = ${token}`;
 
+	// Award owners
 	const terrains = catan.terrainsWithToken(token)
 	catan.awardOwners(terrains)
 
